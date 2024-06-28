@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h3>URL Scheme 测试</h3>  
+  <script>
+    let data = [
+      'flextv://flexvideo.cc/video?link_id=10639&series_id=92&series_no=1',
+      '默认用户',
+       'flextv://flexvideo.cc/video?link_id=10640&series_id=93&series_no=1',
+      '0充新用户',
+       'flextv://flexvideo.cc/video?link_id=10641&series_id=93&series_no=1',
+      '付费用户',
+       'flextv://flexvideo.cc/video?link_id=10642&series_id=93&series_no=1',
+      '免费用户活跃前2天',
+       'flextv://flexvideo.cc/video?link_id=10644&series_id=93&series_no=1',
+      '免费用户活跃后2天',
+       'flextv://flexvideo.cc/video?link_id=10645&series_id=93&series_no=1',
+      '促销用户',
+       'flextv://flexvideo.cc/video?link_id=10646&series_id=93&series_no=1',
+      '付费用户不续充',
+       'flextv://flexvideo.cc/video?link_id=10647&series_id=93&series_no=1',
+      '付费用户-转-免费用户前2天',
+       'flextv://flexvideo.cc/video?link_id=10648&series_id=93&series_no=1',
+      '促销用户不续充',
+       
+    ]
+
+    data.forEach((item) => {
+      document.write(`<p><a href="${item}">${item}</a><p>`);
+    });
+    
+  </script>
+
+</body>
+</html>
